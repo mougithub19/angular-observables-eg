@@ -13,15 +13,15 @@ students: Student[] = [
 {
     id: 1,
     name: 'Rushabh',
-    enrollmentnumber: 110470116023,
-    college: 'VVP Engineering College',
+    enrollmentnumber: 123,
+    college: 'XYZCollege',
     university: 'GTU'
 },
 {
     id: 2,
     name: 'Ankit',
     enrollmentnumber: 110470116022,
-    college: 'VVP Engineering College',
+    college: 'ABCCollege',
     university: 'GTU'
 }];
 
