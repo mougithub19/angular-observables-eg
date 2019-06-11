@@ -1,6 +1,7 @@
 // student.service.ts
 
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs'
 import { Student } from './student.model';
 
 @Injectable({
@@ -25,4 +26,13 @@ students: Student[] = [
 }];
 
   constructor() { }
+  public getStudents(): any {
+     const studentsObservable = new Observable(observer => {
+            setTimeout(() => {
+                observer.next(this.students);
+            }, 1000);
+     });
+
+     return studentsObservable;
+ }
 }
